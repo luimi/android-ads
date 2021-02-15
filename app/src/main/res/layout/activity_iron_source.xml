@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".IronSource">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IronSource verifica que se tenga instalado otras librerias como AdColony, AdMob, Amazon, AppLovin, Chartboost, Facebook, Fyber, HyprMX, InMobi, Maio, MyTarget, Pangle, Tapjoy, UnityAds y Vungle"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:id="@+id/btn_rewardvideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RewardedVideo"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_interstitial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Interstitial"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_offerwall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OfferWall"
+        android:textAllCaps="false" />
+    <FrameLayout
+        android:id="@+id/bannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="visible"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>
