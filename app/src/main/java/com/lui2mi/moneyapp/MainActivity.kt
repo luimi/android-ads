@@ -11,12 +11,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findViewById<Button>(R.id.btn_ironsource).setOnClickListener(this)
+        findViewById<Button>(R.id.btn_admob).setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         var activity: Class<*> = MainActivity::class.java
         when(v?.id) {
             R.id.btn_ironsource -> activity = IronSource::class.java
+            R.id.btn_admob -> activity = AdMob::class.java
         }
         startActivity(Intent(this,activity))
     }

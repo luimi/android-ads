@@ -17,6 +17,12 @@
             android:layout_height="wrap_content"
             android:text="IronSource"
             android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_admob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AdMob"
+            android:textAllCaps="false" />
     </LinearLayout>
 
 

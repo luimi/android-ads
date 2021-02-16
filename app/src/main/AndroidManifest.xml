@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lui2mi.moneyapp">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MoneyApp">
-        <activity android:name=".IronSource"></activity>
+        <activity android:name=".AdMob"></activity>
+        <activity android:name=".IronSource" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,6 +35,12 @@
             android:configChanges="orientation|screenSize"
             android:hardwareAccelerated="true"
             android:theme="@android:style/Theme.Translucent" />
+        <!-- pruebas: ca-app-pub-3940256099942544~3347511713 -->
+        <!-- product: ca-app-pub-6931890428485350~9405744781-->
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
     </application>
 
 </manifest>

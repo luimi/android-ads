@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdMob"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <Button
+        android:id="@+id/btn_interstitial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intersticial"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_rewardedvideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RewardedVideo"
+        android:textAllCaps="false" />
+    <!-- pruebas ca-app-pub-3940256099942544/6300978111 -->
+    <!-- product ca-app-pub-6931890428485350/9433116209 -->
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>
